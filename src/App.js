@@ -4,7 +4,7 @@ import Detail from "./routes/Detail";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/React_practice">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Detail />} />
