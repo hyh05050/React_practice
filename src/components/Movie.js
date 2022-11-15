@@ -7,7 +7,9 @@ function Movie({ id, img_url, title, summary, genres }) {
       <div>
         <img src={img_url} alt={title} />
         <h2>
-          <Link to={`movie/${id}`}>{title}</Link>
+          <Link to={`movie/${id}`} state={{ id: id }}>
+            {title}
+          </Link>
         </h2>
         <p>{summary}</p>
         <ul>
